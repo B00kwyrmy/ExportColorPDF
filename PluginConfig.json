@@ -1,0 +1,10 @@
+{
+  "name": "Export Color PDF",
+  "desc": "Exports the current document in colour as a PDF or PNG — auto-detecting handwritten .note pages, annotated PDFs, or annotated EPUBs and rendering each with the per-stroke colours from the Custom Color Palette plugin. Choose the scope: current page, specific pages (e.g. 3-10), annotated pages, pages with new annotations, or the entire document.",
+  "iconPath": "assets/icon.png",
+  "versionName": "2.5.0",
+  "versionCode": "5",
+  "pluginID": "ecpc01combinedv1xm",
+  "pluginKey": "ExportColorPDFCombined",
+  "jsMainPath": "index"
+}

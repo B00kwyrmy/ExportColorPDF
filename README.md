@@ -51,6 +51,6 @@ coexists with the two originals during testing.
 ## Build / deploy
 
 ```bash
-bash buildPlugin.sh   # → build/outputs/ExportColorPDFCombined.snplg  (needs ANDROID_HOME)
-/Users/laurienuzzo/adb -s SN078C10032421 push build/outputs/ExportColorPDFCombined.snplg /storage/emulated/0/MyStyle/
+bash buildPlugin.sh   # → build/outputs/ExportColorPDF.snplg  (needs ANDROID_HOME)
+/Users/laurienuzzo/adb -s SN078C10032421 push build/outputs/ExportColorPDF.snplg /storage/emulated/0/MyStyle/
 ```

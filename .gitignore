@@ -1,0 +1,13 @@
+node_modules/
+build/
+.gradle/
+android/.gradle/
+android/build/
+.env
+.DS_Store
+
+# releases/ is intentionally tracked — .snplg files belong in version control
+package-lock.json
+
+android/app.zip
+app.npk
