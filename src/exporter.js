@@ -16,7 +16,11 @@ const MAX_PAGES = 0;                 // 'full' mode: 0 = every page
 // Wash-vs-opaque is colour-driven: a highlighter colour on a wash-capable pen →
 // translucent wash; any other colour → opaque.
 const HIGHLIGHTER_HEXES = new Set(
-  ['#F2C6DE', '#FAEDCB', '#F7D9C4', '#C6DEF1', '#C9E4DE', '#DBCDF0'],
+  // All 8 highlighters in the same order as CCP App.tsx HIGHLIGHT_COLORS: Lt/Dk
+  // Grey (which reuse the grey ink hexes — listed so RESIZED grey markers wash
+  // too) then the 6 colours. This is a Set, so only the VALUES matter for
+  // matching; the order is purely for readability against App.tsx.
+  ['#C9C9C9', '#9D9D9D', '#FF6FB8', '#FF9A3D', '#FFD400', '#5FD0A0', '#5BB0EE', '#A77DEA'],
 );
 function isHighlightColor(hex) { return !!hex && HIGHLIGHTER_HEXES.has(hex.toUpperCase()); }
 

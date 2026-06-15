@@ -40,11 +40,11 @@ class ColorPdfRendererModule(reactContext: ReactApplicationContext)
 
     companion object {
         // Highlighter wash strength (0 = invisible, 1 = full multiply of the
-        // colour). The wash only ever receives the (already-pale) highlighter
-        // palette colours now, so full multiply = the true highlight colour over
-        // white and dark text stays dark. Lower this only if a highlight reads
-        // too strong; lowering too far makes the pale colours vanish.
-        private const val HIGHLIGHT_ALPHA = 1.0f
+        // colour). The palette now uses SATURATED highlighter colours, so the
+        // see-through effect comes from the wash itself: ~0.45 lightens the colour
+        // before multiplying, giving visible colour you can still read through.
+        // Raise for bolder highlights, lower for fainter.
+        private const val HIGHLIGHT_ALPHA = 0.45f
     }
 
     /**
